@@ -264,7 +264,7 @@ google = oauth.register(
 )
 
 app.config["SECRET_KEY"] = "change-this-secret"  # change for production (use env var)
-app.config["MONGO_URL"] = os.getenv("MONGO_URL")
+app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 # Session cookie (dev-friendly settings — tighten for prod)
 app.config["SESSION_COOKIE_HTTPONLY"] = True
 app.config["SESSION_COOKIE_SAMESITE"] = "None"  # allows cross-site in dev
