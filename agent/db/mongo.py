@@ -8,7 +8,7 @@ from pymongo.database import Database
 
 load_dotenv()
 
-_MONGO_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/trendevo")
+_MONGO_URI = os.getenv("MONGODB_URI", "mongodb+srv://vanshika1310sharma_db_user:myetcFSTQzOzBLmq@cluster0.4r2c82p.mongodb.net/trendevo")
 _DB_NAME = _MONGO_URI.rsplit("/", 1)[-1] or "trendevo"
 
 _client: Optional[MongoClient] = None
