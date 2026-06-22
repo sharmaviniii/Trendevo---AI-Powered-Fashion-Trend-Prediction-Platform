@@ -264,7 +264,7 @@ google = oauth.register(
 )
 
 app.config["SECRET_KEY"] = "change-this-secret"  # change for production (use env var)
-app.config["MONGO_URI"] = "mongodb+srv://vanshika1310sharma\_db\_user:xd0CvUEgCTkNN6MI@cluster0.4r2c82p.mongodb.net/?appName=Cluster0"
+app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 # Session cookie (dev-friendly settings — tighten for prod)
 app.config["SESSION_COOKIE_HTTPONLY"] = True
 app.config["SESSION_COOKIE_SAMESITE"] = "None"  # allows cross-site in dev
@@ -284,6 +284,8 @@ CORS(app,
 # ---------------------
 # Mongo (Flask-PyMongo)
 # ---------------------
+print("MONGO_URI exists:", bool(os.getenv("MONGO_URI")))
+print("MONGO_URI value:", os.getenv("MONGO_URI"))
 mongo = PyMongo(app)
 # OpenAI: only construct client when OPENAI_API_KEY is set so `python app.py` still boots in dev.
 _openai_api_key = os.getenv("OPENAI_API_KEY")
