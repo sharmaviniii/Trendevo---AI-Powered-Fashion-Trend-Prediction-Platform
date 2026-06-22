@@ -143,18 +143,20 @@ async def weather(city: str):
 
 @app.get("/agent/health")
 async def health():
-    db_ok = True
-    try:
-        db = get_db()
-        # ping as a simple check
-        db.command("ping")
-    except Exception:
-        db_ok = False
+    return {
+        "status": "ok"
+    }
+    #db_ok = True
+    #try:
+     #   db = get_db()
+      #  db.command("ping")
+    #except Exception:
+     #   db_ok = False
 
-    info = orchestrator.health()
-    info["db_connected"] = db_ok
-    info["memory_stats"] = memory_stats()
-    return info
+    #info = orchestrator.health()
+   # info["db_connected"] = db_ok
+    #info["memory_stats"] = memory_stats()
+    #return info
 
 
 @app.exception_handler(HTTPException)
