@@ -1,5 +1,6 @@
 **🚀 TrendÉvo**
-AI-Powered Fashion Trend Prediction & Thrift Marketplace
+AI-Powered Fashion Trend Prediction & Thrift Marketplace 
+Link : https://trendevo.onrender.com/static/index.html
 
 **📌 Overview**
 
