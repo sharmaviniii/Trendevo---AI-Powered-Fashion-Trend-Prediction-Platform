@@ -36,7 +36,7 @@ Git & GitHub <br>
 Render <br>
 VS Code <br>
 
-🔮 **Future** **Scope**
+🔮 **Future** **Scope** <br>
 Advanced deep learning models (Transformers) <br>
 Virtual try-on features <br>
 Real-time outfit preview <br>
