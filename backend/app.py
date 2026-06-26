@@ -394,28 +394,34 @@ def serve_images(filename):
 def dresses():
     return send_from_directory(FRONTEND_DIR, "dresses.html")
 
+
 @app.route("/denims")
 def denims():
     return send_from_directory(FRONTEND_DIR, "denims.html")
 
+
 @app.route("/jackets")
-def product():
+def jackets():
     return send_from_directory(FRONTEND_DIR, "jackets.html")
 
+
 @app.route("/knitwear")
-def dresses():
+def knitwear():
     return send_from_directory(FRONTEND_DIR, "knitwear.html")
 
+
 @app.route("/thrift")
-def denims():
+def thrift():
     return send_from_directory(FRONTEND_DIR, "thrift.html")
+
 
 @app.route("/product")
 def product():
     return send_from_directory(FRONTEND_DIR, "product.html")
 
+
 @app.route("/upperwear")
-def product():
+def upperwear():
     return send_from_directory(FRONTEND_DIR, "upperwear.html")
 # ---------------------
 # Simple index / health
